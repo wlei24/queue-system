@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: QUEUE-OFFLINE.SERVICE
+server:
+  port: 10083
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true

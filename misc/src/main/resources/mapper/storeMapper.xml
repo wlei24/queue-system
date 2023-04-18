@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wlei24.queuesystem.misc.dao.CityMapper">
-    <select id="findAll" resultType="com.wlei24.queuesystem.misc.entity.City">
-        SELECT * FROM qs_city
+<mapper namespace="com.wlei24.queuesystem.misc.dao.StoreMapper">
+    <select id="selectListByCityId" parameterType="java.lang.Integer" resultType="com.wlei24.queuesystem.misc.entity.Store">
+        SELECT * FROM qs_store where cityId=#{cityId}
     </select>
 </mapper>

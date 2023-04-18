@@ -11,6 +11,18 @@
 
     <artifactId>gateway</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>com.wlei24</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.wlei24</groupId>
+            <artifactId>misc</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <properties>

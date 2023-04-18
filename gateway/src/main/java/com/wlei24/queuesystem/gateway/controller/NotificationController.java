@@ -1,4 +1,4 @@
-package com.wlei24.queuesystem.gateway.Controller;
+package com.wlei24.queuesystem.gateway.controller;
 
 public class NotificationController {
 }

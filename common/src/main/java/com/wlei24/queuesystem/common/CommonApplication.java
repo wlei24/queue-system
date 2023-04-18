@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author wlei24
+ *
+ * Just for running the common module
  */
 @SpringBootApplication
 public class CommonApplication {

@@ -1,4 +1,4 @@
-package com.wlei24.queuesystem.gateway.Entity.Request;
+package com.wlei24.queuesystem.gateway.entity.Request;
 
 import lombok.Data;
 
@@ -18,9 +18,9 @@ public class MiscStoreListRequest {
     private String searchWord;
 
     /**
-     * 分页ID
+     * 分页页码
      */
-    private Integer pageId;
+    private Integer pageNum;
 
     /**
      * 分页数量

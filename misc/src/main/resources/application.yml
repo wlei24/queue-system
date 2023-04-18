@@ -1,6 +1,11 @@
 spring:
   application:
     name: QUEUE-MISC.SERVICE
+  datasource:
+    username: root
+    password: wanglei8
+    url: jdbc:mysql://localhost:3306/queue-system?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 10085
 eureka:
@@ -11,3 +16,26 @@ eureka:
     register-with-eureka: true
   instance:
     prefer-ip-address: true
+
+# Apollo配置
+app:
+  id: queue-misc.service
+apollo:
+  bootstrap:
+    namespaces: application
+    eagerLoad:
+      enabled: true
+
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+# logging
+logging:
+  file:
+    name: /Users/wlei24/Code/queue-system/logs/${spring.application.name}.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+  level:
+    com: info

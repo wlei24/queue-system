@@ -1,2 +1,6 @@
-package com.wlei24.queuesystem.common.Response;public class IResult {
+package com.wlei24.queuesystem.common.response;
+
+public interface IResult {
+    Integer getCode();
+    String getMessage();
 }

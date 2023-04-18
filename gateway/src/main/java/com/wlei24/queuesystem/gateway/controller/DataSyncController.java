@@ -1,2 +1,2 @@
-package com.wlei24.queuesystem.gateway.Controller;public class DataSyncController {
+package com.wlei24.queuesystem.gateway.controller;public class DataSyncController {
 }

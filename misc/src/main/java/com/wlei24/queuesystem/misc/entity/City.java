@@ -1,12 +1,12 @@
 package com.wlei24.queuesystem.misc.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 /**
  * 城市实体类.
  *
- * @Created 2023-4-17 11:31:21
  * @author wlei24
  */
 @Data
@@ -20,16 +20,6 @@ public class City {
      * 城市名称.
      */
     private String name;
-
-    /**
-     * 城市纬度.
-     */
-    private Double latitude;
-
-    /**
-     * 城市经度.
-     */
-    private Double longitude;
 
     /**
      * 城市索引.
@@ -49,10 +39,12 @@ public class City {
     /**
      * 城市创建时间.
      */
-    private Date createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createTime;
 
     /**
      * 城市更新时间.
      */
-    private Date updateTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime updateTime;
 }
